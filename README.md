@@ -1,25 +1,20 @@
-Sign language is one of the oldest and most natural form of language for communication, but since most people do not know sign language and interpreters are very difficult to come by we have come up with a real time method using neural networks for fingerspelling based american sign language.
+This project focuses on converting hand gestures into text and audio to help bridge communication gaps for individuals using sign language. The system uses Convolutional Neural Networks (CNNs), OpenCV, and Mediapipe to detect and classify hand gestures in real-time, translating them into text and audio output.
 
-In this method, the hand is first passed through a filter and after the filter is applied the hand is passed through a classifier which predicts the class of the hand gestures. This method provides 98.00 % accuracy for the 26 letters of the alphabet.
+The application also aims to provide immediate first aid information during natural disasters by interpreting gestures and offering relevant advice.
 
-Project Description
-American sign language is a predominant sign language Since the only disability D&M people have is communication related and they cannot use spoken languages hence the only way for them to communicate is through sign language.
-
-Communication is the process of exchange of thoughts and messages in various ways such as speech, signals, behavior and visuals.
-
-Deaf and Mute(Dumb)(D&M) people make use of their hands to express different gestures to express their ideas with other people.
-
-Gestures are the nonverbally exchanged messages and these gestures are understood with vision. This nonverbal communication of deaf and dumb people is called sign language.
-
-Sign language is a visual language and consists of 3 major components
-
-components
-
-In this project I basically focus on producing a model which can recognize Fingerspelling based hand gestures in order to form a complete word by combining each gesture.
-
-The gestures I trained are as given in the image below.
-
-Signs
+Features
+Real-time Hand Gesture Detection: Utilizes OpenCV and Mediapipe to detect hand gestures in real-time.
+Sign Language Conversion: Converts recognized gestures into corresponding text and audio using a CNN model.
+First Aid Information: Provides immediate first aid advice based on interpreted gestures, leveraging NLP and machine learning.
+User-Friendly Interface: Built with Flask, offering an easy-to-navigate web interface.
+Technologies Used
+Python
+CNN (Convolutional Neural Networks)
+OpenCV
+Mediapipe
+Flask
+NLTK (Natural Language Toolkit)
+Levenshtein Distance Algorithm
 
 Steps of building this project
 1. The first Step of building this project was of creating the folders for storing the training and testing data. As, in this project I have built my own dataset.
@@ -205,9 +200,3 @@ Running the Project
 python /path/to/the/Application.py
 License
 Copyright (c) 2021 Nikhil Gupta
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
